@@ -17,3 +17,5 @@ try {
   if ($again.Findings.Count -ne $report.Findings.Count) { throw 'replay findings differ' }
 } finally { Remove-Item $temp -ErrorAction SilentlyContinue }
 Write-Output 'Windows live collection and replay passed'
+
+exit 0
